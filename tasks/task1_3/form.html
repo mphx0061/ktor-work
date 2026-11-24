@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>My Form</title>
+</head>
+
+<body>
+<form action="https://httpbin.io/dump/request" method="POST">
+    <label for='name'>Enter your name</label>
+    <input type="text" id="name" name="name">
+
+    <label for="email">Enter your email</label>
+    <input type="email" id="email" name="email">
+
+    <label for="DOB">Enter your date of birth</label>
+    <input type="date" id="DOB" name="DOB" required>
+
+    <label for="colour-select">Choose a colour:</label>
+    <input type="color" id="colour-select" name="color">
+
+<fieldset>
+    <legend>What is your identity</legend>
+      <ul>
+    <li>
+      <label for="staff-member">staff member</label>
+      <input type="radio" id="staff-member" name="identity" value="staff member">
+    </li>
+    <li>
+      <label for="student">student</label>
+      <input type="radio" id="student" name="identity" value="student" >
+    </li>
+      </ul>
+
+</fieldset>
+  
+<button>Done</button>
+
+</form>
+
+</body>
+</html>
